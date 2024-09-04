@@ -13,13 +13,13 @@ public class Principal {
 		System.out.println("Configurações atuais:\nVol: " + controle.getVolumeTelevisao() + "      Canal: " + controle.getCanalTelevisao());
 		System.out.println("\nBotões (digitos) para controlar sua TV:");
 		System.out.println("1 - Aumentar Volume");
-        System.out.println("2 - Diminuir Volume");
-        System.out.println("3 - Próximo Canal");
-        System.out.println("4 - Canal Anterior");
-        System.out.println("5 - Consultar Volume");
-        System.out.println("6 - Consultar Canal");
-        System.out.println("7 - Digitar Canal");
-        System.out.println("8 - Desligar controle");
+        	System.out.println("2 - Diminuir Volume");
+        	System.out.println("3 - Próximo Canal");
+        	System.out.println("4 - Canal Anterior");
+        	System.out.println("5 - Consultar Volume");
+        	System.out.println("6 - Consultar Canal");
+        	System.out.println("7 - Digitar Canal");
+        	System.out.println("8 - Desligar controle");
         
         while(true) {
         	System.out.println("\n''Pressione'' o botão:\n");
@@ -43,16 +43,16 @@ public class Principal {
 	                    System.out.println("Canal antecessor: " + controle.getCanalTelevisao());
 	                    break;
 	                case 5:
-	                	controle.retornaVolumeAtual();
-	                	System.out.println("Volume atual: " + controle.getVolumeTelevisao());
-	                	break;
+	                    controle.retornaVolumeAtual();
+	                    System.out.println("Volume atual: " + controle.getVolumeTelevisao());
+	                    break;
 	                case 6:
-	                	controle.retornaCanalAtual();
-	                	System.out.println("Canal atual: " + controle.getCanalTelevisao());
-	                	break;
+	                    controle.retornaCanalAtual();
+	                    System.out.println("Canal atual: " + controle.getCanalTelevisao());
+	                    break;
 	                case 7:
-	                	System.out.println("Canal atual: " + controle.mudaCanalTelevisao() + "\n");
-	                	break;
+	                    System.out.println("Canal atual: " + controle.mudaCanalTelevisao() + "\n");
+	                    break;
 	                case 8:
 	                    System.out.println("Saindo do programa...");
 	                    scanner.close();
