@@ -3,6 +3,15 @@ package desafio;
 public abstract class Quadrilatero {
 	protected float largura;
 	protected float altura;
+	protected double raio;
+	String nome;
+	
+	public Quadrilatero() {
+		
+	}
+	
+	public abstract float calcularArea();
+	public abstract float calcularPerimetro();
 	
 	public float getLargura() {
 		return largura;
@@ -35,14 +44,4 @@ public abstract class Quadrilatero {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	protected double raio;
-	String nome;
-	
-	public Quadrilatero() {
-		
-	}
-	
-	public abstract float calcularArea();
-	public abstract float calcularPerimetro();
-	
 }

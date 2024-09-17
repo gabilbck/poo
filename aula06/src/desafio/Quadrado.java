@@ -1,6 +1,6 @@
 package desafio;
 
-public class Quadrado extends Quadrilatero {
+public class Quadrado extends Retangulo {
 
 	public Quadrado() {
 		setNome("Quadrado");
@@ -8,12 +8,10 @@ public class Quadrado extends Quadrilatero {
 	}
 	
 	public float calcularArea() {
-		return (getLargura * getAltura);
+		return (getLargura() * getAltura());
 	}
 
-	@Override
 	public float calcularPerimetro() {
-		return 0;
+		return (4 * getLargura());  
 	}
-
 }

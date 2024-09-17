@@ -3,19 +3,17 @@ package desafio;
 public class Retangulo extends Quadrilatero {
 
 	public Retangulo() {
-		// TODO Auto-generated constructor stub
+		setNome("setRetangulo");
 	}
 
 	@Override
 	public float calcularArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getLargura() * getAltura();
 	}
 
 	@Override
 	public float calcularPerimetro() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (2 * getLargura()) + (2 * getAltura());
 	}
 
 }

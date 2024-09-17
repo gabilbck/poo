@@ -9,9 +9,7 @@ public abstract class Produto {
 		this.produtoDesc = produtoDesc;
 	}
 	
-	public float calcularPreco() {
-		return 0.0f;
-	}
+	public abstract float calcularPreco();
 	
 	public String obterDadosProduto() {
 		return produtoSKU + produtoDesc;

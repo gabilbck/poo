@@ -17,8 +17,8 @@ public class ProdutoKilo extends Produto {
 	public float getVlrKiloProduto() {
 		return vlrKiloProduto;
 	}
-	
-	public float calcularProduto() {
-		return getVlrKiloProduto() * getQtdKiloProduto();
+
+	public float calcularPreco() {
+		return getQtdKiloProduto() * getVlrKiloProduto();
 	}
 }
