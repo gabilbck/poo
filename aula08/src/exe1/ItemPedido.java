@@ -2,7 +2,7 @@ package exe1;
 
 public class ItemPedido {
     private int qtdeItem;
-    private Produto produto;
+    private Produto produto; //ItemPedido existe para um unico objeto Pedido
 
     public ItemPedido(int qtdeItem, Produto produto) {
         this.qtdeItem = qtdeItem;
